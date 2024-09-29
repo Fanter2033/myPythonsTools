@@ -1,15 +1,10 @@
-# subShifter
-I wrote this program quickly because I wanted to watch Anatomy of a Fall (great film, by the way!) 
-but the subtitles I found weren't synchronized with the movie.
-Hope you find this script useful. "Buona visione!"ù
+# MY PYTHON'S TOOLS
+Simples python's programs I make for my ordinary needs (and learn something).
 
-## usage
-``` bash
-python subShifter.py "filename" "time(ms)"
-``` 
+## The repo provides:
 
-## example
-```bash
-python subShifter.py The.Holdovers.2023.srt 9000
-``` 
-shift all the subtitles by 9 seconds 
+### EasyTransfer
+A collection of algoritms for copy and organize files from camera's SD. 
+
+### SubShifter
+shift subtitles from srt files.     
