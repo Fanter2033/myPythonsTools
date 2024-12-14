@@ -2,11 +2,11 @@ import datetime
 import re
 
 def parse_input(arg):
-    if arg == "today" or arg == "t":
+    if arg in ["today", "t"]:
         return str(datetime.date.today())
 
-    format_found = ""
-    fill_seq = ""
+    date_format_found = ""
+    date_fill_sequence = ""
 
     patterns = {
         "YYYY": r"^\d{4}$",
@@ -15,22 +15,22 @@ def parse_input(arg):
     }
     for format_name, pattern in patterns.items():
         if re.match(pattern, arg):
-            format_found = format_name
-    if format_found == "YYYY":
-        fill_seq = "-01-01"
-    elif format_found == "YYYY-MM":
-        fill_seq = "-01"
-    elif format_found == "":
-        return ""
+            date_format_found = format_name
+    if date_format_found == "YYYY":
+        date_fill_sequence = "-01-01"
+    elif date_format_found == "YYYY-MM":
+        date_fill_sequence = "-01"
+    elif date_format_found == "":
+        raise ValueError("Invalid date format. Expected formats: YYYY, YYYY-MM, YYYY-MM-DD")
     
-    validate(arg + fill_seq)
-    return arg + fill_seq
+    validate(arg + date_fill_sequence)
+    return arg + date_fill_sequence
     
 def validate(date_text):
     try:
         datetime.date.fromisoformat(date_text)
     except ValueError:
-        exit("Incorrect data format, should be YYYY-MM-DD")
+        raise ValueError("Incorrect data format, should be YYYY-MM-DD")
 
 def parse_options(args):
     mode = list("0000")
