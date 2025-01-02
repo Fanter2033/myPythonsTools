@@ -1,0 +1,7 @@
+{
+    "src" : "E:/DCIM/100MSDCF",
+    "dst" : "D:/foto",
+    "ext" : [".JPG", ".ARW"],
+    "start_date" : "1 year",
+    "end_date" : "today"
+}
