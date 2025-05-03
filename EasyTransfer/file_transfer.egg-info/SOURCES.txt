@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+file_transfer/__init__.py
+file_transfer/cli.py
+file_transfer/data_preprocessing.py
+file_transfer/easy_transfer.py
+file_transfer/util.py
+file_transfer.egg-info/PKG-INFO
+file_transfer.egg-info/SOURCES.txt
+file_transfer.egg-info/dependency_links.txt
+file_transfer.egg-info/entry_points.txt
+file_transfer.egg-info/requires.txt
+file_transfer.egg-info/top_level.txt

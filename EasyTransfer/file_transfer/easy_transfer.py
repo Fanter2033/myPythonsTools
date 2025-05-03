@@ -1,6 +1,6 @@
 import os
 import shutil
-from util import is_in_timeline, ts_to_str, REC
+from .util import is_in_timeline, ts_to_str, REC
 from tqdm import tqdm
 
 

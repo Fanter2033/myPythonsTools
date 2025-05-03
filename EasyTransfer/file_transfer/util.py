@@ -2,7 +2,6 @@ import datetime
 import platform
 import json
 import os
-import time
 
 # CONSTANT
 __author__ = "Fanter"

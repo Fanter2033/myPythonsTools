@@ -1,8 +1,11 @@
 import datetime
 import re
-from util import AUTO, REC
+from .util import AUTO, REC
 
 def convertDate(duration_str) -> str:
+    """
+    Converts a duration string into a date string.
+    """
     duration_str = duration_str.lower().strip()
     today = datetime.date.today()
     if duration_str in ["today", "t"]:

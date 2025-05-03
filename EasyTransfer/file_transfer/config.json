@@ -1,7 +1,7 @@
 {
     "src" : "E:/DCIM/100MSDCF",
-    "dst" : "D:/foto",
+    "dst" : "D:/foto_camera",
     "ext" : [".JPG", ".ARW"],
-    "start_date" : "1 year",
+    "start_date" : "20 years",
     "end_date" : "today"
 }
